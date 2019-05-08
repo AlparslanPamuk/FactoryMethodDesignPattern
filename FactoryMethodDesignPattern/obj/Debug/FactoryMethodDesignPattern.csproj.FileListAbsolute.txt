@@ -1,0 +1,7 @@
+C:\Users\alp_g\OneDrive\Desktop\Udemy Patterns\FactoryMethodDesignPattern\FactoryMethodDesignPattern\bin\Debug\FactoryMethodDesignPattern.exe.config
+C:\Users\alp_g\OneDrive\Desktop\Udemy Patterns\FactoryMethodDesignPattern\FactoryMethodDesignPattern\bin\Debug\FactoryMethodDesignPattern.exe
+C:\Users\alp_g\OneDrive\Desktop\Udemy Patterns\FactoryMethodDesignPattern\FactoryMethodDesignPattern\bin\Debug\FactoryMethodDesignPattern.pdb
+C:\Users\alp_g\OneDrive\Desktop\Udemy Patterns\FactoryMethodDesignPattern\FactoryMethodDesignPattern\obj\Debug\FactoryMethodDesignPattern.csprojAssemblyReference.cache
+C:\Users\alp_g\OneDrive\Desktop\Udemy Patterns\FactoryMethodDesignPattern\FactoryMethodDesignPattern\obj\Debug\FactoryMethodDesignPattern.csproj.CoreCompileInputs.cache
+C:\Users\alp_g\OneDrive\Desktop\Udemy Patterns\FactoryMethodDesignPattern\FactoryMethodDesignPattern\obj\Debug\FactoryMethodDesignPattern.exe
+C:\Users\alp_g\OneDrive\Desktop\Udemy Patterns\FactoryMethodDesignPattern\FactoryMethodDesignPattern\obj\Debug\FactoryMethodDesignPattern.pdb

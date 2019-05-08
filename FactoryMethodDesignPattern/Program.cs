@@ -10,7 +10,11 @@ namespace FactoryMethodDesignPattern
     {
         static void Main(string[] args)
         {
+            CustomerManager customerManager = new CustomerManager(new LoggerFactory2());
+            customerManager.Save();
 
+            Console.ReadLine();
+             
         }
     }
 
@@ -18,15 +22,62 @@ namespace FactoryMethodDesignPattern
     public class LoggerFactory:IloggerFactory
     {
         public Ilogger CreateLogger()
+        {
+            //Bussiness to decide factory   
+            return new MustafaAlparlanPamukLogger();
+        }
+    }
+
+    public class LoggerFactory2 : IloggerFactory
+    {
+        public Ilogger CreateLogger()
+        {
+            //Bussiness to decide factory   
+            return new MustafaPamukLogger();
+        }
     }
 
     public interface IloggerFactory
     {
-
+        Ilogger CreateLogger();
     }
 
     public interface Ilogger
     {
+        void Log();
+    }
 
+    public class MustafaAlparlanPamukLogger : Ilogger
+    {
+        public void Log()
+        {
+            Console.WriteLine("Logged with MustafaAlparlanPamukLogger!" );
+        }
+    }
+
+    public class MustafaPamukLogger : Ilogger
+    {
+        public void Log()
+        {
+            Console.WriteLine("Logged with MustafaPamukLogger!");
+        }
+    }
+
+    public class CustomerManager
+    {
+        private IloggerFactory _loggerFactory;
+            
+        public  CustomerManager(IloggerFactory loggerfactory)
+        {
+            _loggerFactory = loggerfactory;
+        }
+        public void Save()
+        {
+            Console.WriteLine("Saved!");
+            Ilogger logger = _loggerFactory.CreateLogger();
+            logger.Log();
+        }
+
+     
     }
 }
